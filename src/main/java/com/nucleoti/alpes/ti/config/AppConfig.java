@@ -13,32 +13,16 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan({"com.nucleoti.alpes.ti"})
 public class AppConfig {
 
-//	  <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-//      <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-//      <property name="url" value="jdbc:oracle:thin:@192.168.1.100:1521:orcl"/>
-//      <property name="username" value="user1"/>
-//      <property name="password" value="admin"/>
-//  </bean>
 
-    /*@Bean(name = "dataSource")
-    public DriverManagerDataSource dataSource() {
+    @Bean(name = "dataSource")
+    public DriverManagerDataSource dataSourceMysql() {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-        driverManagerDataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
-        driverManagerDataSource.setUrl("jdbc:oracle:thin:@192.168.1.100:1521:orcl");
-        driverManagerDataSource.setUsername("user1");
-        driverManagerDataSource.setPassword("admin");
+        driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3323/bdPrueba");
+        driverManagerDataSource.setUsername("root");
+        driverManagerDataSource.setPassword("");
         return driverManagerDataSource;
-    }*/
-//    @Bean(name = "dataSource")
-//    public DriverManagerDataSource dataSource() {
-//        DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-//        driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-//        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/bdPrueba");
-//        driverManagerDataSource.setUsername("root");
-//        driverManagerDataSource.setPassword("");
-//        return driverManagerDataSource;
-//    }
-
+    }
 
 
     @Bean(name = "dataSource")

@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class SpringBootAlpesApplication implements WebMvcConfigurer {
-
+	//Clase que inicia el microservicio.
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootAlpesApplication.class, args);
 	}
