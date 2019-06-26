@@ -13,23 +13,11 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan({"com.nucleoti.alpes.ti"})
 public class AppConfig {
 
-
-    @Bean(name = "dataSource")
-    public DriverManagerDataSource dataSourceMysql() {
-        DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-        driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        driverManagerDataSource.setUrl("jdbc:mysql://localhost:3323/bdPrueba");
-        driverManagerDataSource.setUsername("root");
-        driverManagerDataSource.setPassword("");
-        return driverManagerDataSource;
-    }
-
-
     @Bean(name = "dataSource")
     public DriverManagerDataSource dataSource() {
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         driverManagerDataSource.setDriverClassName("org.postgresql.Driver");
-        driverManagerDataSource.setUrl("jdbc:postgresql://localhost:5432/BDERP    ");
+        driverManagerDataSource.setUrl("jdbc:postgresql://localhost:5432/BDERP");
         driverManagerDataSource.setUsername("postgres");
         driverManagerDataSource.setPassword("12345678");
         return driverManagerDataSource;
