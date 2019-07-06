@@ -8,6 +8,7 @@ public class Constantes {
 	public static final String LIST_PRODUCT="/rest/listProduct/{id}";
 	public static final String PRODUCT_BY_ID="/rest/productoById";
 	public static final String PRODUCT_OBJECTO="/rest/producto";
+	public static final String QUERY_PRODUCT_BY_ID="/rest/productodesc";
 	public static final String EXISTE_EMAIL="/rest/existeEmail";
 	public static final String SAVE_PHOTO="/rest/savePhoto";
 	public static final String GET_USER="/rest/getUser";
