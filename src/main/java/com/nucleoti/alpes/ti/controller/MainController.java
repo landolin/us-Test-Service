@@ -22,8 +22,9 @@ public class MainController {
 		model.addObject("title", "Spring Security Limit Login - Annotation");
 		model.addObject("message", "This is default page!");
 		model.setViewName("home");
+		//Test
 		return model;
-
+		
 	}
 
 }
